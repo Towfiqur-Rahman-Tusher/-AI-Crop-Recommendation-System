@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmSmarter with AI</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="pic/LOGO.png" alt="FarmSmarter Logo" class="logo">
+        <h1>FarmSmarter with AI</h1>
+        <div class="auth-buttons">
+            <?php if(isset($_SESSION['user_name'])): ?>
+                
+            <?php else: ?>
+                <a href="login_form.php" class="button">Login</a>
+                <a href="signupform.php" class="button">Sign Up</a>
+            <?php endif; ?>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-toggle" id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="home3.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogmain.html">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="intro-section">
+            <div class="text-content">
+                <h3>FarmWithAI</h3>
+                <h5>Empowering Farmers with Smart Decisions</h5>
+                <p>
+                    Founded in 2023, the FarmWithAI platform was envisioned by 5 friends  to transforming agriculture and rural development in all over the country. Rooted in this dynamic community, FarmWithAI quickly became a vital tool for empowering local farmers. From its inception, the platform was designed to tackle the pressing challenges of crop selection, resource optimization, and sustainable farming practices. With a focus on personalized guidance and cutting-edge AI technology, FarmWithAI has broadened its reach to support agricultural communities far and wide. Today, it stands as a beacon of progress and resilience, delivering intelligent farming solutions and unwavering support to those who cultivate the land.
+                </p>
+            </div>
+            <img class="intro-image" src="css/home.jpg" alt="Agriculture Field">
+        </section>
+
+        <section class="vision-mission">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To be the leading provider of compassionate and comprehensive agricultural solutions, enriching lives and inspiring hope in our farming community.</p>
+            </div>
+            <div class="card">
+                <h3>Our Motto</h3>
+                <p>Cultivating Growth with Every Insight.</p>
+            </div>
+        </section>
+
+        <section class="founders">
+            <h3>Meet the Founders</h3>
+            <div class="founder-cards">
+                <div class="founder-card">
+                    <img src="pic/Taufiq.jpg" alt="Founder">
+                    <div class="founder-card-content">
+                        <h4>Taofiq Omar Raju</h4>
+                        <p>As one of the founders of FarmWithAI, my vision has always been to merge technology with agriculture to empower farmers. FarmWithAI was created to solve real-world challenges by providing intelligent tools that simplify crop selection and resource management. Seeing farmers thrive with our platform inspires me every day to push the boundaries of innovation. Together, we are building a future where farming is smarter, sustainable, and more rewarding.</p>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="pic/pritum.jpg" alt="Founder">
+                    <div class="founder-card-content">
+                        <h4>Pritum Kumar Shill</h4>
+                        <p>FarmWithAI is more than just a platform; it is a mission to uplift farming communities and promote sustainable agriculture. As a founder, I am deeply committed to helping farmers navigate the complexities of modern farming through AI-driven insights. Our goal is to make farming more efficient and accessible to everyone, and I am proud to be part of a team that puts farmers at the center of innovation.</p>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="pic/NI1.jpg" alt="Founder">
+                    <div class="founder-card-content">
+                        <h4>Niloy Basak</h4>
+                        <p>When we started FarmWithAI, we envisioned a world where every farmer could make informed decisions with ease. My focus has been on ensuring the platform is user-friendly and accessible to farmers of all backgrounds. By combining modern technology with traditional wisdom, we aim to create lasting solutions that bring prosperity to farming communities. It has been an honor to contribute to this transformative journey.</p>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="pic/Nokib.png" alt="Founder">
+                    <div class="founder-card-content">
+                        <h4>Nokibul Hasan</h4>
+                        <p>Being a founder of FarmWithAI has been a journey of purpose and fulfillment. My primary aim has been to ensure that our platform not only addresses the technical needs of farmers but also fosters sustainability and environmental responsibility. With every step, we aim to make farming a more profitable and sustainable endeavor. Thank you for trusting FarmWithAI to be your partner in growth and success.</p>
+                    </div>
+                </div>
+                <div class="founder-card">
+                    <img src="pic/Tusher.jpg" alt="Founder">
+                    <div class="founder-card-content">
+                        <h4>Towfiqur Rahman Tusher</h4>
+                        <p>FarmWithAI reflects my passion for empowering farmers with tools that simplify their work and maximize their yield. Agriculture is the backbone of our communities, and I believe innovation is key to sustaining it. Through our platform, we’ve been able to support farmers with personalized guidance tailored to their unique challenges. I am grateful for the opportunity to be part of this impactful initiative.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@smartfarming.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FarmSmarter. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

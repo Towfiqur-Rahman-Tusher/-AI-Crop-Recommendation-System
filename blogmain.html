@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Farm & Agriculture Blog</title>
+    <link rel="stylesheet" href="blogmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="pic/LOGO.png" alt="FarmSmarter Logo" class="logo">
+        <h1>FarmSmarter with AI</h1>
+        <div class="auth-buttons">
+            <?php if(isset($_SESSION['user_name'])): ?>
+                
+            <?php else: ?>
+                <a href="login_form.php" class="button">Login</a>
+                <a href="signupform.php" class="button">Sign Up</a>
+            <?php endif; ?>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-toggle" id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="home3.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogmain.html">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="blog-container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>FarmSmarter Blog</h1>
+                <p>Insights and Innovations in Modern Agriculture</p>
+            </div>
+        </section>
+
+        <div class="blog-grid-container">
+            <!-- Blog 1 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog1.jpg" alt="Sustainable Farming">
+                </div>
+                <div class="card-content">
+                    <h2>The Importance of Sustainable Farming in Bangladesh</h2>
+                    <p>Bangladesh, with its fertile land and favorable climate, has the potential to lead sustainable farming initiatives. By adopting eco-friendly methods...</p>
+                    <a href="blog1.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 2 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blogpage.jpg" alt="Top Crops">
+                </div>
+                <div class="card-content">
+                    <h2>Top Crops Grown in Bangladesh</h2>
+                    <p>From rice to jute, Bangladesh is known for producing a variety of crops. Explore the top crops and their economic importance...</p>
+                    <a href="article2.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 3 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog3.jpg" alt="Agricultural Technology">
+                </div>
+                <div class="card-content">
+                    <h2>Technology Transforming Agriculture</h2>
+                    <p>Discover how drones and smart irrigation systems are revolutionizing farming practices in Bangladesh...</p>
+                    <a href="article3.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 4 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/farm3.jpg" alt="Rural Challenges">
+                </div>
+                <div class="card-content">
+                    <h2>Challenges in Rural Farming</h2>
+                    <p>Understanding the struggles of rural farmers from unpredictable weather to lack of modern tools...</p>
+                    <a href="article4.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 5 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog5.jpg" alt="Women in Agriculture">
+                </div>
+                <div class="card-content">
+                    <h2>Women's Role in Agriculture</h2>
+                    <p>Recognizing the vital contributions of women in Bangladesh's agricultural sector...</p>
+                    <a href="article5.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 6 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog6.jpg" alt="Organic Farming">
+                </div>
+                <div class="card-content">
+                    <h2>Organic Farming Trends</h2>
+                    <p>Exploring the growing popularity and challenges of organic farming in Bangladesh...</p>
+                    <a href="article6.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 7 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog7.jpeg" alt="Rice Cultivation">
+                </div>
+                <div class="card-content">
+                    <h2>Rice Cultivation Techniques</h2>
+                    <p>Understanding the backbone of Bangladesh's agricultural economy through rice production...</p>
+                    <a href="article7.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 8 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog8.jpg" alt="Climate Impact">
+                </div>
+                <div class="card-content">
+                    <h2>Climate Change & Agriculture</h2>
+                    <p>Examining the effects of changing climate patterns on crop yields in Bangladesh...</p>
+                    <a href="article8.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 9 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog9.jpg" alt="Innovative Practices">
+                </div>
+                <div class="card-content">
+                    <h2>Innovative Farming Practices</h2>
+                    <p>New approaches helping smallholder farmers increase productivity and income...</p>
+                    <a href="article9.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Blog 10 -->
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="pic/blog10.jpg" alt="Government Policies">
+                </div>
+                <div class="card-content">
+                    <h2>Agricultural Policy Overview</h2>
+                    <p>Government initiatives supporting farmers and agricultural growth in Bangladesh...</p>
+                    <a href="article10.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@smartfarming.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FarmSmarter. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

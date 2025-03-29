@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmSmarter Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+        <!-- Header -->
+        <header>
+            <img src="pic/LOGO.png" alt="FarmSmarter Logo" class="logo">
+            <h1>FarmSmarter with AI</h1>
+            <div class="auth-buttons">
+                <?php if(isset($_SESSION['user_name'])): ?>
+                    
+                <?php else: ?>
+                    <a href="login_form.php" class="button">Login</a>
+                    <a href="signupform.php" class="button">Sign Up</a>
+                <?php endif; ?>
+            </div>
+        </header>
+    
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="home3.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogmain.html">Blog</a></li>
+            </ul>
+        </nav>
+    
+    <main class="services-container">
+        <section class="hero-services">
+            <div class="hero-content">
+                <h1>Our Smart Farming Solutions</h1>
+                <p>Innovative tools to empower modern farmers</p>
+            </div>
+        </section>
+
+        <div class="services-grid">
+            <!-- Crop Recommendation Card -->
+            <div class="service-card">
+                <i class="fas fa-seedling service-icon"></i>
+                <h2>Smart Crop Advisor</h2>
+                <p>Get AI-powered crop recommendations based on your soil type, weather conditions, and market trends.</p>
+                <a href="signupform.php" class="service-btn">Try Now</a>
+            </div>
+
+            <!-- Profit Calculator Card -->
+            <div class="service-card">
+                <i class="fas fa-calculator service-icon"></i>
+                <h2>Profit Analyzer</h2>
+                <p>Calculate potential profits, track expenses, and optimize your farming business finances.</p>
+                <a href="signupform.php" class="service-btn">Get Started</a>
+            </div>
+
+            <!-- Agricultural Support Card -->
+            <div class="service-card">
+                <i class="fas fa-headset service-icon"></i>
+                <h2>24/7 Farm Support</h2>
+                <p>Connect with agricultural experts for real-time solutions to your farming challenges.</p>
+                <a href="#" class="service-btn">Contact Support</a>
+            </div>
+        </div>
+    </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@smartfarming.com</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FarmSmarter. All rights reserved</p>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Farmer Registration Form</title>
+    <link rel="stylesheet" href="/CSS/registrationform.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home3.html">Home</a>
+    </div>
+
+    <div class="form-container">
+
+        <h2> Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="division">Division:</label>
+            <select id="division" name="division" required>
+                <option value="">Select Division</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Barisal">Barisal</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Rangpur">Rangpur</option>
+            </select>
+
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="">Select District</option>
+            </select>
+
+            <label for="upazila">Upazila:</label>
+            <select id="upazila" name="upazila" required>
+                <option value="">Select Upazila</option>
+            </select>
+
+            <label for="soilType">Soil Type:</label>
+            <select id="soilType" name="soilType" required>
+                <option value="">Select Soil Type</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Clayey">Clayey</option>
+                <option value="Loamy">Loamy</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+            </select>
+
+            <label for="lastYearCrops">Last Year Crops:</label>
+            <textarea id="lastYearCrops" name="lastYearCrops" rows="4" required></textarea>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <script src="registrationform.js"></script>
+
+    </div>
+
+</body>
+</html>
